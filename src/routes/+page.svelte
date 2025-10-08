@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
-	import { onMount } from 'svelte';
 	let username = $state('');
 	let pw = $state('');
+
+	let signupError: string | undefined = $state();
 
 	async function signup(e: SubmitEvent) {
 		e.preventDefault();
@@ -13,9 +13,11 @@
 
 <main class="flex w-full flex-col items-center">
 	<!-- HERO -->
-	<section class="flex h-screen flex-row items-center">
+	<section
+		class="flex h-screen flex-col items-center justify-center gap-16 md:flex-row md:justify-start md:gap-4"
+	>
 		<div class="flex w-full max-w-none flex-col gap-6">
-			<h1 class="text-8xl" style="font-family: 'Space Mono', monospace;">get-worms</h1>
+			<h1 class="text-6xl md:text-8xl" style="font-family: 'Space Mono', monospace;">get-worms</h1>
 
 			<h2 class=" md:max-w-md">
 				Leave insightful and lead-brained <span
@@ -57,6 +59,6 @@
 	@reference 'tailwindcss';
 
 	section {
-		@apply w-full md:max-w-5xl;
+		@apply w-full px-10 md:max-w-5xl md:px-0;
 	}
 </style>
