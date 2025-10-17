@@ -11,9 +11,9 @@
 		<h3 class="pt-6 text-2xl">Privacy Policy</h3>
 		<p class="pt-4">
 			We only store your email and username. <br />We don’t sell, share, or track beyond what’s
-			needed to run the service. Your username is public, your email is private. Public posts are
-			public, we can’t stop others from copying them. Delete your account anytime to remove your
-			info from our systems. That’s it.
+			needed to run the service. Public posts and your username are public, we can’t stop others
+			from copying them. Delete your account anytime to remove your info from our systems. That’s
+			it.
 		</p>
 
 		<div class="w-full pt-8 text-center">
